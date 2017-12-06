@@ -33,9 +33,10 @@ mean work, over(anykids post93)
 
  
 ** Q6.
-gen postXany = anykids*post93
+gen postXany = post93*anykids
 reg work post93 anykids postXany
 
+ 
  
 ** Q4.
 preserve
