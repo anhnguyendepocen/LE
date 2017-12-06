@@ -27,18 +27,18 @@ gen post93 = (year>1993)
 su children year anykids post93
 
  
-** Q5.
+** Q4.
 bys anykids post93: su work
 mean work, over(anykids post93)
 
  
-** Q6.
+** Q5.
 gen postXany = post93*anykids
 reg work post93 anykids postXany
 
  
  
-** Q4.
+** Additional Analysis using a graph.
 preserve
 
 * Graph 1: Trend
